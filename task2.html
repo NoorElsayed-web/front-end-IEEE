@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/7b3cebbf0d5c58527ff0b80c9b22d7a3.jpg" alt="Error" width="150px" height="50px">
+        <h1>Nalana Spark</h1>
+    </header>
+    <hr>
+    <main>
+        <section id="sec1">
+            <h2>Registration Steps:</h2>
+            <ol type="1">
+                <li>Fill out your personal information.</li>
+                <li>Review the available plans in the table below.</li>
+                <li>Submit your application</li>
+            </ol>
+            <p>Note: Make sure your email is active.</p>
+        </section>
+        <hr>
+        <section id="sec2">
+            <h2>Available Courses:</h2>
+            <table border="3">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Track</th>
+                        <th rowspan="2">Course Name</th>
+                        <th colspan="3">Fees</th>
+                    </tr>
+                    <tr>
+                        <td>basic</td>
+                        <td>professional</td>
+                        <td>advanced</td>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">web development</td>
+                        <td> HTML basics</td>
+                        <td>20$</td>
+                        <td>30$</td>
+                        <td>50$</td>
+                    </tr>
+                    <tr>
+                        <td>CSS styling</td>
+                        <td>30$</td>
+                        <td>40$</td>
+                        <td>60$</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2"> Full track fees</th>
+                        <td>50$</td>
+                        <td>70$</td>
+                        <td>110$</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table border="3">
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th colspan="6">Year of project</th>
+                        <th>
+
+                        </th>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <th>Year0</th>
+                        <th>Year1</th>
+                        <th>Year2</th>
+                        <th>Year3</th>
+                        <th>Year4</th>
+                        <th>Year5</th>
+                        <th>totals</th>
+                    </tr>
+                    <tr>
+                        <th>net economic benefit</th>
+                        <td>0</td>
+                        <td>100000</td>
+                        <td>100000</td>
+                        <td>100000</td>
+                        <td>100000</td>
+                        <td>100000</td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <th>discount rate 15%</th>
+                        <td>1.0</td>
+                        <td>0.87</td>
+                        <td>0.756</td>
+                        <td>0.658</td>
+                        <td>0.572</td>
+                        <td>0.497</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                </thead>
+            </table>
+        </section>
+        <hr>
+        <section id="sec3">
+            <h2>Registration Form:</h2>
+            <form action="task2replay.html" method="get">
+                <label for="name">Full Name:</label>
+                <input type="name" name="Name" id="name" placeholder="Enter your name" required><br><br>
+                <label for="email">Email Address:</label>
+                <input type="email" name="emailaddress" id="email" placeholder="Name@gmail.com" required><br><br>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" required><br><br>
+                <label for="tel">Telephone:</label>
+                <input type="tel" name="telephone" id="tel" placeholder="01xxxxxxxxx" pattern="[0-9]{11}"
+                    required><br><br>
+                <label for="pass">Password:</label>
+                <input type="password" name="password" id="pass" required><br><br>
+                <label>Gender:</label><br>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male" checked required>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <br><br>
+                <label for="plan">Choose a plan:</label>
+                <select name="plan" id="plan" required>
+                    <option value="basic">basic</option>
+                    <option value="professional">professional</option>
+                    <option value="advanced">advanced</option>
+                </select>
+                <br><br>
+                <label for="bio">Tell us about yourself:</label><br>
+                <textarea name="bio" id="bio" placeholder="write a short bio..." required></textarea>
+                <br><br><input type="checkbox" name="agregation" id="agree" required>
+                <label for="agree">I agree terms and condidtions.</label><br><br>
+                <input type="submit">
+                <input type="reset">
+                <button class="btn">Display</button>
+            </form>
+        </section>
+    </main>
+    <hr>
+    
+    <footer>
+        <p>If you face any issues, please contact us:</p>
+        <a href="https://support.google.com/">Contact Support</a>
+        <p>@ 2026 Copy Rights ( just a try)</p>
+    </footer>
+    <a href="task3.html" target="_blank">
+        <button>Task3</button></a>
+    <script src="script5.js"></script>
+</body>
+
+</html>

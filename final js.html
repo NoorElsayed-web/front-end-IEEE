@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        button{
+            margin: 10px auto auto;
+            padding: 10px 20px;
+            background-color: #cfd1cf;
+            border-radius: 10px;
+            border:none;
+                        display :block;
+                    
+
+        }
+        
+        .dataCard {
+            width: fit-content;
+            height: 270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid #f71647;
+            padding: 20px;
+            margin: 20px;
+            background-color: #fc85c6;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <form>
+            <label for ="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <br><br>    
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Name@gmail.com" required>
+            <br><br>
+            <label for="age">Age:</label>   
+            <input type="number" name="age" id="age" placeholder="Enter your age"  required>
+            <br><br>        
+            <label for="tel">Telephone:</label>
+            <input type="tel" name="tel" id="tel" placeholder="01xxxxxxxxx" pattern="[0-9]{11}" required>
+                    <button type="submit" id="btn">Submit</button>
+
+        </form>
+    </fieldset></div>
+    <div class="dataCard">
+        <h1 id =username></h1>
+        <h2 id =useremail></h2>
+        <h2 id =userage></h2>
+        <h2 id =usertel></h2>
+    </div>
+    <script src="final js.js"></script>
+</body>
+</html>
